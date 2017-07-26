@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Timestamp Microservice</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.com/7e3e88c5-f9e7-482b-b859-ebc13a41a481%2Ffavicon.ico?1500316090556" />
+    <style>
+       #mainContainer1{
+        width:60%;
+        margin: 0 auto;
+        padding:20px;
+      }
+      #header1{
+        display:flex;
+      }
+      #appImage1{
+        flex:1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      #appImage1 > img{
+        height:65px;
+      }
+      #header1 >  h1{
+        flex:4;
+        text-align:center;
+        font-family: 'Orbitron', sans-serif;
+      }
+      #content1{
+        width:65%;
+        margin:0 auto;
+        margin-top:20px;
+        padding:24px;
+        font-size:36px;
+      }
+      #content1 > code{
+/*         margin:0 auto;
+        padding:12px;
+        border-radius:1.2em;
+        background-color:#fdebf1; */
+        color:hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainContainer1">
+        <div id="header1">
+         <div id="appImage1">
+            <img src="https://cdn.glitch.com/7e3e88c5-f9e7-482b-b859-ebc13a41a481%2Ftime.svg?1501004559440">
+          </div>
+        <h1>
+          Timestamps
+        </h1>
+      </div>
+      <div id="content1">
+        <code>{<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Unix_timestamp&nbsp;:</strong>&nbsp;&nbsp;<%= data.unix_timestamp %>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Date&nbsp;:</strong>&nbsp;&nbsp;<%= data.date %><br>}</code>
+      </div>
+    </div>
+  </body>
+</html>

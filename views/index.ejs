@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Timestamp Microservice</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.com/7e3e88c5-f9e7-482b-b859-ebc13a41a481%2Ffavicon.ico?1500316090556" />
+    <style>
+      #mainContainer{
+        width:60%;
+        margin: 0 auto;
+        padding:20px;
+      }
+      #header{
+        display:flex;
+      }
+      #appImage{
+        flex:1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      #appImage > img{
+        height:65px;
+      }
+      #header >  h1{
+        flex:4;
+        text-align:center;
+        font-family: 'Orbitron', sans-serif;
+      }
+      #content{
+        font-family: 'Roboto Mono', monospace;
+        font-size:14px;
+      }
+      #content > code{
+        padding:12px;
+        border-radius:1.2em;
+        background-color:#fdebf1;
+        color:hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div id="header">
+        <div id="appImage">
+          <img src="https://cdn.glitch.com/7e3e88c5-f9e7-482b-b859-ebc13a41a481%2Ftime.svg?1501004559440">
+        </div>
+        <h1>
+          Timestamp Microservice
+        </h1>
+      </div>
+      <div id="content">
+        <h3>
+            User Story:  
+        </h3>  
+        <p>
+            1.I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).<br>
+            <br>2.If it does, it returns both the Unix timestamp and the natural language form of that date.<br>
+            <br>3.If it does not contain a date or Unix timestamp, it returns null for those properties.<br>
+        </p>
+        <code>https://thetimestamp.glitch.me/datestring</code>
+        <p>
+          OR
+        </p>
+        <code>https://thetimestamp.glitch.me/unixTimeStamp</code>
+    </div>
+    </div>
+  </body>
+</html>
